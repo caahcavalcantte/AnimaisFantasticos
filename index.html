@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animais Fantástico</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+      document.documentElement.className += ' js';
+    </script>
   </head>
 
   <body>
+    <!-- Topo Menu -->
     <nav class="menu">
       <ul>
         <li><a href="#animais">Animais</a></li>
@@ -16,9 +20,11 @@
         <li><a href="http://www.origamid.com">Dev →</a></li>
       </ul>
     </nav>
+    <!-- Conteúdo Principal -->
     <section class="grid-section animais" id="animais">
       <h1 class="titulo">Animais Fantásticos</h1>
-      <ul>
+      <ul class="animais-lista js-tabmenu">
+        
         <li>
           <img src="img/imagem1.jpg" alt="" />
         </li>
@@ -39,7 +45,7 @@
         </li>
       </ul>
 
-      <div class="animais-decricao">
+      <div class="animais-descricao js-tabcontent">
         <section>
           <h2>Raposa</h2>
           <p>
@@ -136,7 +142,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
             adipisci sunt eum dolore amet impedit.
           </p>
-          <p>
+          <p>P
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, est?
           </p>
         </section>
@@ -163,8 +169,8 @@
       </div>
     </section>
     <section class="grid-section faq" id="faq">
-      <h1>FAQ</h1>
-      <dl>
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista">
         <dt>Qual idade dos animais?</dt>
         <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam?</dd>
         <dt>Eles são fantáticos?</dt>
@@ -175,9 +181,9 @@
         <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam?</dd>
       </dl>
     </section>
-
+    <!-- Contato -->
     <section class="grid-section contato" id="contato">
-      <h1>Contato</h1>
+      <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <img src="img/mapa.png" alt="">
       </div>
@@ -188,11 +194,11 @@
         <li>São Paulo - RJ</li>
       </ul>
     </section>
-
+    <!-- Rodapé -->
     <footer class="copy">
       <p>Todos os direitos reservados.</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
